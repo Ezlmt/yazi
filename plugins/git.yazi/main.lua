@@ -159,9 +159,9 @@ local function setup(st, opts)
 		if not change or signs[change] == "" then
 			return ""
 		elseif self._file:is_hovered() then
-			return ui.Line({ " ", signs[change] })
+			return ui.Line { " ", signs[change] }
 		else
-			return ui.Line({ " ", ui.Span(signs[change]):style(styles[change]) })
+			return ui.Line { " ", ui.Span(signs[change]):style(styles[change]) }
 		end
 	end, opts.order)
 end
@@ -179,14 +179,13 @@ local function fetch(_, job)
 		paths[#paths + 1] = tostring(f.url)
 	end
 
-    -- stylua: ignore
-    local output, err = Command("git")
-        :cwd(tostring(cwd))
-        :args({ "--no-optional-locks", "-c", "core.quotePath=", "status", "--porcelain", "-unormal", "--no-renames",
-            "--ignored=matching" })
-        :args(paths)
-        :stdout(Command.PIPED)
-        :output()
+	-- stylua: ignore
+	local output, err = Command("git")
+		:cwd(tostring(cwd))
+		:args({ "--no-optional-locks", "-c", "core.quotePath=", "status", "--porcelain", "-unormal", "--no-renames", "--ignored=matching" })
+		:args(paths)
+		:stdout(Command.PIPED)
+		:output()
 	if not output then
 		return true, Err("Cannot spawn `git` command, error: %s", err)
 	end
