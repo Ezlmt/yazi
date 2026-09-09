@@ -1,29 +1,29 @@
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "6c639b4"
-hash = "5614c46d5de76623c283d415bfac8025"
+rev = "ea92cf4"
+hash = "9776f378459072b6c2875eae5addc49d"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "a1b678d"
-hash = "9dce00232a0e0e2502565c7aa2b0ed4e"
+rev = "58c4f4e"
+hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "a1b678d"
-hash = "7918aab6a71caf31b58411f789195677"
+rev = "58c4f4e"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "a1b678d"
-hash = "bcbf72738d4b7fb9a03cac84465b9ba4"
+rev = "58c4f4e"
+hash = "5bb0bfab901d3601c370eafdd66edd31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "a1b678d"
-hash = "812fd49667ab6823250f0411f8cf793a"
+rev = "58c4f4e"
+hash = "5b2fbef7d1513ce38ff72623a071a5e"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "c023460"
-hash = "2ac87e1b3a61f5887472899e86535d29"
+rev = "20b47bf"
+hash = "ce320f877fe709b189433941aba747c4"
